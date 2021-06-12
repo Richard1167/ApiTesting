@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
         BaseService().getBaseApi { data, e ->
 
             if (data != null && e == null) {
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 data.locations
             } else {
                 Log.e("testingAPI", "Exception", e)
+
             }
         }
 
@@ -56,8 +56,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
-
 
     }
 }
