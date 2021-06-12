@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Log.e("testingAPI", "newError2", e)
                 }
+                var b6 = 17
             }
 
         }
